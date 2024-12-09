@@ -1,0 +1,35 @@
+.balance-node{
+    font-size: 22px;
+    width: fit-content;
+    padding: 10px;
+    display: flex;
+    gap:40px;
+    border: 2px solid #0a58ca;
+    text-align: center;
+}
+.line-stat{
+    display: flex;
+    gap: 20px;
+}
+.stavka-story-card{
+    border-radius: 20px;
+    list-style: none;
+    background: #516a91;
+    margin-bottom: 10px;
+    max-width: 300px;
+    padding: 10px;
+    text-align: center;
+    transition: 0.2s;
+   cursor: pointer;
+}
+.stavka-story-card:hover{
+    transition: 0.2s;
+    transform: scale(1.1);
+}
+.story-container{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}

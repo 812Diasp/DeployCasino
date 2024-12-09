@@ -1,0 +1,182 @@
+.coin-container {
+    background-color: rgba(
+            255,
+            255,
+            255,
+            0.9
+    );
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    text-align: center;
+    animation: fadeIn 1s ease;
+    width: 80%;
+    max-width: 500px;
+    perspective: 1000px;
+}
+
+.c-container-coin {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color: #b5c8ff;
+    font-size: 2.5rem;
+    margin: 0 0 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.coin {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease-in-out;
+    margin: 0 auto;
+    backface-visibility: hidden;
+}
+
+#toss-button {
+    background-color: #4e6bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out,
+    transform 0.2s ease-in-out;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    /* Add other styles as needed */
+    background-image: linear-gradient(
+            45deg,
+            #808080,
+            #333333
+    );
+}
+
+#toss-button:hover {
+    background-image: linear-gradient(
+            45deg,
+            #ffffff,
+            #0c30f6,
+            #b02d2d
+    );
+
+
+}
+
+#toss-button:disabled {
+    background-image: linear-gradient(
+            45deg,
+            #8d8d8d,
+            #000000
+    );
+    cursor: not-allowed;
+}
+
+.none {
+    display: none;
+    opacity: 0;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+    transition: opacity 0.5s ease-in-out;
+
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    letter-spacing: 2px;
+}
+
+.coin:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateY(0deg);
+
+        filter: invert(90%);
+    }
+    50% {
+        filter: invert(80%);
+    }
+    80% {
+        filter: invert(50%);
+    }
+    100% {
+        transform: rotateY(360deg);
+
+        filter: invert(10%);
+    }
+}
+
+.coin.flip {
+    animation: spin 2s cubic-bezier(0.4, 2.5, 0.6, 0.5);
+}
+
+.coin img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transform: rotateY(0deg);
+}
+
+.coin-container {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.1);
+}
+
+.coin-container:hover {
+
+}
+
+h2 {
+    color: #a47a7a;
+    font-size: 24px;
+    margin: 10px 0;
+}
+#betAmount{
+    text-align: center;
+    justify-content: center;
+    background: transparent;
+    color: black;
+    font-size: 1.5rem;
+    width: 10rem;
+}
+#side{
+    text-align: center;
+    justify-content: center;
+    background: transparent;
+    color: black;
+    font-size: 1.5rem;
+    width: 10rem;
+}
+
+
+
+
+
+
+
+
+
