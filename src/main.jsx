@@ -9,8 +9,6 @@ import Story from "../components/storyGame/Story.jsx";
 
 createRoot(document.getElementById('root')).render(
     <BrowserRouter>
-
-
         <Routes>
             <Route path={'/'} element={<App/>}></Route>
             <Route path={'/login'} element={<Login/>}></Route>
